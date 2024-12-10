@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Home, Calendar, Search, BarChart2, User } from 'lucide-react';
 import { Dock, DockIcon } from './ui/dock';
 
@@ -9,19 +10,19 @@ export function Navigation() {
       <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 lg:hidden">
         <Dock className="!mt-0 !border-none shadow-lg bg-white/90 backdrop-blur-lg">
           <DockIcon className="text-blue-600">
-            <Home className="h-6 w-6" />
+            <Link to="/"><Home className="h-6 w-6" /></Link>
           </DockIcon>
           <DockIcon className="text-gray-600 hover:text-blue-600">
-            <Calendar className="h-6 w-6" />
+            <Link to="/calendar"><Calendar className="h-6 w-6" /></Link>
           </DockIcon>
           <DockIcon className="text-gray-600 hover:text-blue-600">
-            <Search className="h-6 w-6" />
+            <Link to="/search"><Search className="h-6 w-6" /></Link>
           </DockIcon>
           <DockIcon className="text-gray-600 hover:text-blue-600">
-            <BarChart2 className="h-6 w-6" />
+            <Link to="/stats"><BarChart2 className="h-6 w-6" /></Link>
           </DockIcon>
           <DockIcon className="text-gray-600 hover:text-blue-600">
-            <User className="h-6 w-6" />
+            <Link to="/profile"><User className="h-6 w-6" /></Link>
           </DockIcon>
         </Dock>
       </nav>
@@ -35,21 +36,21 @@ export function Navigation() {
             </div>
             <Dock className="flex-col !mt-0 !border-none !h-auto" direction="middle">
               <DockIcon className="text-blue-600 bg-blue-50">
-                <Home className="h-6 w-6" />
+                <Link to="/"><Home className="h-6 w-6" /></Link>
               </DockIcon>
               <DockIcon className="text-gray-600 hover:text-blue-600 hover:bg-blue-50">
-                <Calendar className="h-6 w-6" />
+                <Link to="/calendar"><Calendar className="h-6 w-6" /></Link>
               </DockIcon>
               <DockIcon className="text-gray-600 hover:text-blue-600 hover:bg-blue-50">
-                <Search className="h-6 w-6" />
+                <Link to="/search"><Search className="h-6 w-6" /></Link>
               </DockIcon>
               <DockIcon className="text-gray-600 hover:text-blue-600 hover:bg-blue-50">
-                <BarChart2 className="h-6 w-6" />
+                <Link to="/stats"><BarChart2 className="h-6 w-6" /></Link>
               </DockIcon>
             </Dock>
           </div>
           <DockIcon className="text-gray-600 hover:text-blue-600 hover:bg-blue-50">
-            <User className="h-6 w-6" />
+            <Link to="/profile"><User className="h-6 w-6" /></Link>
           </DockIcon>
         </div>
       </nav>
