@@ -4,7 +4,7 @@ import { SearchBar } from './components/SearchBar';
 import { StatsCard } from './components/StatsCard';
 import { EventCard } from './components/EventCard';
 import { Layout } from './components/Layout';
-import { Profile } from './components/Profile';
+import Profile  from './components/Profile';
 
 function App() {
   const events = [
@@ -94,6 +94,7 @@ function App() {
               </div>
             } />
             <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<div>404 Not Found</div>} />
           </Routes>
         </div>
       </Layout>
