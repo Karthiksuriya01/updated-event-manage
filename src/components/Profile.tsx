@@ -46,13 +46,13 @@ export function Profile() {
               onChange={handleProfilePicChange}
               className="mt-2"
             />
-            <h1 className="text-xl font-bold mt-4">Shiryoku</h1>
-            <p className="text-gray-600">Product Designer / Digital Creator</p>
-            <p className="mt-4 text-center">
+            <h1 className="text-xl font-bold mt-4 md:text-2xl">Shiryoku</h1>
+            <p className="text-gray-600 text-sm md:text-base">Product Designer / Digital Creator</p>
+            <p className="mt-4 text-center text-sm md:text-base">
               Hi, I'm Shiryoku, an independent visual designer from London, UK. This is my tiny space on the Internet where I share my work archives simple websites / interfaces / design assets.
             </p>
-            <h2 className="text-lg font-semibold mt-6">Work Experience</h2>
-            <p className="mt-2">
+            <h2 className="text-lg font-semibold mt-6 md:text-xl">Work Experience</h2>
+            <p className="mt-2 text-sm md:text-base">
               <strong>2024 — Now</strong> <br />
               Lead Product Designer at ACME <br />
               Remote <br />
